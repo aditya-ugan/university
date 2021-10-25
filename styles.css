@@ -87,7 +87,7 @@ nav .fa{
     display: none;
 }
 
-@media(max-width: 700px){
+@media(max-width: 850px){
     .text-box h1{
         font-size: 20px;
     }
@@ -100,20 +100,30 @@ nav .fa{
         height: 100vh;
         width: 200px;
         top:0;
-        right: -200px;
+        /*
+        transition: 1s;*/
         text-align: left;
-        z-index: 2;
+        z-index: 1;
         transition: 1s;
+        visibility: hidden;
+        right: -200px;
+        
     }
     nav .fa{
         display: block;
-        color: #fff;
+        color: rgb(243, 234, 234);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
     .nav-links ul{
         padding: 30px;
+    }
+    nav .fa-times{
+        color:black;
+    }
+    .side-button{
+        background-color: #f44336;
     }
 }
 /*----------- Courses -------*/
